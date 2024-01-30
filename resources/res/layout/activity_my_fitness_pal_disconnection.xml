@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <LinearLayout android:background="@color/blue_nautilus" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/mfp_disconnection_screen_row_height" android:onClick="disconnectFromMyFitnessPal">
+        <TextView android:textSize="@dimen/mfp_disconnection_screen_row_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/mfp_disconnection_screen_row_margin_left" android:text="@string/mfp_app_disconnect_title" style="@style/TextLight"/>
+    </LinearLayout>
+    <LinearLayout android:background="@color/blue_nautilus" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

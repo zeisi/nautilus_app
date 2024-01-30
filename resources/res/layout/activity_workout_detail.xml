@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/workout_detail_content" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/today_layout_menus" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@color/blue_title" android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_main_header_height">
+                <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/textView3" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:text="@string/workout_date" style="@style/TextLight"/>
+                <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/text_view_date_value" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:textAllCaps="true" android:layout_toEndOf="@+id/textView3" style="@style/TextBold"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+                    <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_time" android:layout_weight="1" style="@style/TextLight"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_elapsed_time_value_header_hight">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <LinearLayout android:id="@+id/linearLayout4" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_elapsed_time_value_text_size" android:textColor="@color/white" android:id="@+id/text_view_elapsed_time" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:30:00" android:layout_weight="1" style="@style/TextBold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:background="@color/journal_day_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_calories" android:layout_weight="1" style="@style/TextLight"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_value_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_values_text_size" android:textColor="@color/white" android:id="@+id/text_view_calories_burned" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="900" style="@style/TextBold"/>
+                        <TextView android:textSize="@dimen/workout_detail_values_spec_text_size" android:textColor="@color/white" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_total" style="@style/TextLight"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_values_text_size" android:textColor="@color/white" android:id="@+id/text_view_average_calories_burned" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="64.05" style="@style/TextBold"/>
+                        <TextView android:textSize="@dimen/workout_detail_values_spec_text_size" android:textColor="@color/white" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_avg_min" style="@style/TextLight"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:background="@color/journal_day_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/workout_heart_rate" android:layout_weight="1" style="@style/TextLight"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_value_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_values_text_size" android:textColor="@color/white" android:id="@+id/text_view_heart_rate_avg" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120" style="@style/TextBold"/>
+                        <TextView android:textSize="@dimen/workout_detail_values_spec_text_size" android:textColor="@color/white" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_avg" style="@style/TextLight"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:id="@+id/power_divider" android:background="@color/journal_day_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/power_label_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/workout_avg_power" android:layout_weight="1" style="@style/TextLight"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/power_value_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_value_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_values_text_size" android:textColor="@color/white" android:id="@+id/text_view_watts_avg" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120" style="@style/TextBold"/>
+                        <TextView android:textSize="@dimen/workout_detail_values_spec_text_size" android:textColor="@color/white" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_watts" style="@style/TextLight"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:background="@color/journal_day_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/workout_average_speed" android:layout_weight="1" style="@style/TextLight"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_value_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_values_text_size" android:textColor="@color/white" android:id="@+id/text_view_avg_speed" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.5" style="@style/TextBold"/>
+                        <TextView android:textSize="@dimen/workout_detail_values_spec_text_size" android:textColor="@color/white" android:id="@+id/text_view_speed_unit" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_speed_mph" style="@style/TextLight"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:background="@color/journal_day_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <TextView android:textSize="@dimen/workout_detail_titles_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/workout_detail_general_padding" android:paddingTop="@dimen/workout_detail_general_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/workout_distance" android:layout_weight="1" style="@style/TextLight"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workout_detail_value_row_header_height">
+                <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/workout_detail_values_text_size" android:textColor="@color/white" android:id="@+id/text_view_distance" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.5" style="@style/TextBold"/>
+                        <TextView android:textSize="@dimen/workout_detail_values_spec_text_size" android:textColor="@color/white" android:id="@+id/text_view_distance_unit" android:paddingLeft="@dimen/workout_detail_general_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workout_miles" style="@style/TextLight"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:background="@color/journal_day_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

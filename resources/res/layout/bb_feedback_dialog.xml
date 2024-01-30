@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:windowNoTitle="true" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/bb_topBar" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageButton android:id="@+id/bb_cancel_btn" android:background="@color/bb_transparent" android:paddingTop="8dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bb_close_img" android:scaleType="centerInside" android:tint="@color/bb_button"/>
+        <TextView android:textSize="17dp" android:textColor="@color/bb_white" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/bb_send_feedback" android:singleLine="true" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/bb_send_btn" android:background="@color/bb_transparent" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bb_send_img" android:scaleType="centerInside" android:tint="@color/bb_button"/>
+    </LinearLayout>
+    <View android:background="#22000000" android:layout_width="match_parent" android:layout_height="4px"/>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/bb_screenshot_image_view" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="fitStart" android:layout_weight="0.3"/>
+        <EditText android:textColor="@color/bb_black" android:gravity="top" android:id="@+id/bb_feedback_edit_text" android:background="@color/bb_transparent" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/bb_feedback_placeholder" android:layout_weight="0.7" android:inputType="none|text|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine"/>
+    </LinearLayout>
+</LinearLayout>

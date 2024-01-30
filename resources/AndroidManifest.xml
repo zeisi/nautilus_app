@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="47" android:versionName="1.2.0" package="com.nautilus.omni" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="25"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.nautilus.omni.app.OmniApplication" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.mainactivity.view.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SplashTheme" android:label="@string/app_name" android:name="com.nautilus.omni.appmodules.splash.view.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.tutorial.view.TutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.connectionwizard.view.ConnectionWizardActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.connectionwizard.view.OmniTrainerListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.connectionwizard.view.SelectUserNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.mainsection.view.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.myfitnesspal.view.MyFitnessPalConnectionActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="test">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="nautilus-trainer" android:host="myFitnessPalController"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.myfitnesspal.view.MyFitnessPalDisconnectionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.mainsection.view.about.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.journal.view.day.workoutdetail.WorkoutDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.googlefit.view.ConnectionGoogleFitActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.googlefit.view.ConfigGoogleFitActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.awardtypes.view.AwardTypesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.underarmour.connect.ConnectUnderArmourActivity">
+            <intent-filter>
+                <data android:scheme="@string/intent_scheme" android:host="@string/intent_host"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.nautilus.omni.appmodules.settings.underarmour.disconnect.DisconnectUnderArmourActivity"/>
+        <service android:name="com.nautilus.omni.syncservices.BLECallbacksHandlerService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.nautilus.omni.syncservices.SyncOmniDataService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.nautilus.omni.syncservices.FitAppsSyncDataService" android:exported="false"/>
+        <service android:name="com.nautilus.omni.syncservices.syncserviceshelpers.SyncProcessService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.nautilus.omni.syncservices.UnderArmourSyncService" android:exported="false"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.nautilus.omni.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="com.nautilus.underarmourconnection.userinterface.connection.UnderArmourConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nautilus.underarmourconnection.userinterface.disconnection.UnderArmourDisconnectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/bb_sdk_theme" android:name="com.buddybuild.sdk.feedback.FeedbackActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/bb_sdk_theme" android:name="com.buddybuild.sdk.buildinfo.BuildInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/bb_sdk_theme" android:name="com.buddybuild.sdk.demo.DemoActivity"/>
+        <activity android:theme="@style/Theme.Dialog" android:name="org.acra.dialog.CrashReportDialog" android:process=":acra" android:finishOnTaskLaunch="true" android:excludeFromRecents="true" android:launchMode="singleInstance"/>
+        <service android:name="org.acra.sender.SenderService" android:exported="false" android:process=":acra"/>
+        <provider android:name="org.acra.attachment.AcraContentProvider" android:exported="false" android:process=":acra" android:authorities="com.nautilus.omni.acra" android:grantUriPermissions="true"/>
+    </application>
+</manifest>

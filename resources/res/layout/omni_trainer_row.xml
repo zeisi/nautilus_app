@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/omni_trainer_row_height">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/max_trainer_row_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/omni_trainer_list_header_info_container_height">
+        <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/omni_trainer_row_image_margin_right">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/max_trainer_image_view" android:background="@color/white" android:layout_width="@dimen/omni_trainer_row_tread_climber_image_width" android:layout_height="@dimen/omni_trainer_row_image_height" android:layout_marginLeft="@dimen/omni_trainer_row_image_margin_left" android:src="@drawable/ic_treadmill" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/signal_image_view" android:layout_width="@dimen/omni_trainer_row_signal_image_width" android:layout_height="@dimen/omni_trainer_row_signal_image_height" android:layout_marginRight="@dimen/omni_trainer_row_signal_image_margin_right" android:src="@drawable/ic_signal_4"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/max_trainer_7_info_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/omni_trainer_row_text_container_heigth">
+            <TextView android:textSize="@dimen/omni_trainer_row_text_size" android:textColor="@color/white" android:id="@+id/max_trainer_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/omni_trainer_row_text_margin_top" android:text="MAX Trainer M7" style="@style/TextLight"/>
+            <TextView android:textSize="@dimen/omni_trainer_row_text_size" android:textColor="@color/white" android:id="@+id/max_trainer_id_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BC7421" android:textAllCaps="true" style="@style/TextLight"/>
+            <TextView android:textSize="@dimen/omni_trainer_row_text_size" android:textColor="@color/blue_nautilus" android:id="@+id/max_trainer_state_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Idle" style="@style/TextLightItalic"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/max_trainer_5_info_container" android:visibility="gone" android:layout_width="@dimen/omni_trainer_row_text_container_width" android:layout_height="@dimen/omni_trainer_row_text_container_heigth">
+            <TextView android:textSize="@dimen/omni_trainer_row_text_size" android:textColor="@color/white" android:id="@+id/max_trainer_5_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAX Trainer M5" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/TextLight"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/omni_trainer_list_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/omni_trainer_row_divider_height"/>
+</LinearLayout>

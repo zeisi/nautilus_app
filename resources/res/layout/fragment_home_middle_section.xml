@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="5.5">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2">
+        <TextView android:textSize="16sp" android:textColor="@color/home_text_white" android:gravity="center" android:id="@+id/textViewWeekTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="AVG" style="@style/TextLight"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageViewIconStat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_middle_section_separator" android:src="@drawable/ic_calories_big"/>
+    </LinearLayout>
+    <View android:textColor="@color/white" android:background="@color/home_blue_separator" android:layout_width="1dp" android:layout_height="62dp" android:layout_marginBottom="@dimen/home_middle_section_separator"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layoutHomeMiddleNoGraphic" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="4" android:layout_weight="4.3">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9">
+            <TextView android:textSize="16sp" android:textColor="@color/home_text_white" android:gravity="center" android:id="@+id/textViewThisWeekTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.9dp" android:text="@string/home_title_this_week" style="@style/TextLight"/>
+            <TextView android:textSize="36sp" android:textColor="@color/home_text_white" android:gravity="center" android:id="@+id/textViewThisWeekNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" style="@style/TextLight"/>
+        </LinearLayout>
+        <View android:textColor="@color/white" android:background="@color/home_blue_separator" android:layout_width="1dp" android:layout_height="62dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2.1">
+            <TextView android:textSize="16sp" android:textColor="@color/home_text_white" android:gravity="center" android:id="@+id/textViewLastWeekTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/home_title_last_week" style="@style/TextLight"/>
+            <TextView android:textSize="36sp" android:textColor="@color/home_text_white" android:gravity="center" android:id="@+id/textViewLastWeekNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="0" android:layout_weight="2" style="@style/TextLight"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutMiddleGraphicSection" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.9dp">
+            <TextView android:textSize="@dimen/home_text_middle_gauge" android:textColor="@color/home_text_white" android:id="@+id/textViewThisWeekGraphic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_title_this_week" android:layout_alignParentTop="true" android:layout_marginStart="9.5dp" android:layout_alignParentStart="true" style="@style/TextLight"/>
+            <TextView android:textSize="@dimen/home_text_middle_gauge" android:textColor="@color/home_text_white" android:id="@+id/textViewGoalGraphic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_title_goal" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@style/TextLight"/>
+        </RelativeLayout>
+        <com.nautilus.omni.customviews.graphics.HorizontalBarGraphicView android:id="@+id/horizontalBarGraphicThisWeek" android:background="@color/home_horizontal_graphic_bar_color" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginStart="12.1dp"/>
+    </LinearLayout>
+</LinearLayout>

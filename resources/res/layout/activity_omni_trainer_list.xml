@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo_nautilus"/>
+            <TextView android:textSize="@dimen/connection_skip_button_text_size" android:textColor="@color/connection_skip_color_button" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/text_view_skip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/connection_skip_button_margin_right" android:text="@string/connection_skip_text_view" android:onClick="skipToHomeScreen" style="@style/TextLight"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:textSize="@dimen/omni_trainer_list_header_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/omni_trainer_list_header_text_margin_top" android:text="@string/connection_list_select" style="@style/TextLight"/>
+                <TextView android:textSize="@dimen/omni_trainer_list_header_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/connection_nautilus" style="@style/TextLight"/>
+                <TextView android:textSize="@dimen/omni_trainer_list_closest_trainer_title_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="@dimen/omni_trainer_list_closest_trainer_title_margin_top" android:layout_marginRight="10dp" android:text="@string/connection_closest_equipment" android:textAlignment="center" style="@style/TextLight"/>
+            </LinearLayout>
+            <LinearLayout android:background="@color/omni_trainer_list_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/omni_trainer_row_divider_height" android:layout_marginTop="@dimen/omni_trainer_list_header_margin_bottom"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/omni_trainer_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/custom_animated_toast"/>
+</FrameLayout>

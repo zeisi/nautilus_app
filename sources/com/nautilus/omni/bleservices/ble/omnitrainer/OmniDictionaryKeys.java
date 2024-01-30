@@ -1,0 +1,44 @@
+package com.nautilus.omni.bleservices.ble.omnitrainer;
+
+public class OmniDictionaryKeys {
+    public static final int ProductConsumerVariant = 200;
+    public static final int ProductFWVersion = 204;
+    public static final int ProductHWVarient = 201;
+    public static final int ProductMfgName = 202;
+    public static final int ProductModelName = 203;
+    public static final int ProductModelNum = 205;
+    public static final int ProductSWVer = 206;
+    public static final int ProgramID = 301;
+    public static final int SystemDataModified = 351;
+    public static final int UserAge = 221;
+    public static final int UserDataModified = 350;
+    public static final int UserGender = 222;
+    public static final int UserHeight = 230;
+    public static final int UserIndex = 220;
+    public static final int UserName = 231;
+    public static final int UserNumWorkoutRecords = 225;
+    public static final int UserUnits = 223;
+    public static final int UserWeight = 224;
+    public static final int WorkoutAvgHR = 311;
+    public static final int WorkoutAvgHRMeasureTime = 312;
+    public static final int WorkoutAvgIncline = 317;
+    public static final int WorkoutAvgLapTime = 319;
+    public static final int WorkoutAvgPower = 313;
+    public static final int WorkoutAvgRPM = 315;
+    public static final int WorkoutAvgResistance = 314;
+    public static final int WorkoutAvgSpeed = 316;
+    public static final int WorkoutCalories = 309;
+    public static final int WorkoutDay = 302;
+    public static final int WorkoutDistance = 310;
+    public static final int WorkoutElapsedTime = 308;
+    public static final int WorkoutFinishTimeHour = 305;
+    public static final int WorkoutFinishTimeMin = 306;
+    public static final int WorkoutFinishTimeSec = 307;
+    public static final int WorkoutFitnessScore = 321;
+    public static final int WorkoutFitnessScoreQualified = 322;
+    public static final int WorkoutLapsCompleted = 320;
+    public static final int WorkoutMonth = 303;
+    public static final int WorkoutRecordDataModified = 352;
+    public static final int WorkoutRecordID = 300;
+    public static final int WorkoutYear = 304;
+}

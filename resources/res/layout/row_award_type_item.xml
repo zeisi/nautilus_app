@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/award_type_row_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/award_types_divider_row_height">
+        <ImageView android:id="@+id/image_view_award_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/award_types_icon_margin_left" android:layout_marginTop="@dimen/award_types_icon_margin_top" android:layout_marginRight="@dimen/award_types_icon_margin_right" android:layout_marginBottom="@dimen/award_types_icon_margin_bottom" android:src="@drawable/ic_award_calories"/>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/image_view_award_type_icon">
+            <TextView android:textSize="@dimen/award_types_text_size" android:textColor="@color/white" android:id="@+id/text_view_award_type_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="MOST CALORIES/WORKOUT" style="@style/TextRegular"/>
+            <TextView android:textSize="@dimen/award_types_text_size" android:textColor="@color/award_types_red_text_color" android:id="@+id/text_view_award_type_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32 Cal Avg - June 13, 2015" style="@style/TextLight"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/award_types_text_size" android:textColor="@color/white" android:id="@+id/text_view_award_type_alternative_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOST CALORIES/WORKOUT" android:layout_centerVertical="true" android:layout_toEndOf="@+id/image_view_award_type_icon" style="@style/TextRegular"/>
+    </RelativeLayout>
+    <View android:background="@color/award_type_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/award_types_divider_row_height"/>
+</LinearLayout>

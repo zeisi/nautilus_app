@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/journal_day_achievement_layout_height">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/achievement_row_image_view" android:layout_width="@dimen/journal_day_achievement_image_width" android:layout_height="@dimen/journal_day_achievement_image_height" android:layout_marginLeft="@dimen/journal_day_achievement_image_margin_left" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="@dimen/journal_day_achievement_message_text_size" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/achievement_row_message_text_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/journal_day_achievement_message_margin_left" android:layout_marginRight="@dimen/journal_day_achievement_message_margin_right" android:text="You burned 195 more calories than your goal!" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/achievement_row_image_view" style="@style/TextLightItalic"/>
+    </RelativeLayout>
+</LinearLayout>

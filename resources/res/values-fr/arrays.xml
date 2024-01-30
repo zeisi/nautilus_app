@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="awards_0">
+        <item>most_calories_award_name</item>
+        <item>most_calories_award_description</item>
+        <item>@drawable/ic_orange_circle</item>
+        <item>@drawable/ic_sticker_calories</item>
+        <item>@drawable/ic_calories_trophy</item>
+        <item>@color/award_orange_color</item>
+        <item>@drawable/ic_award_calories</item>
+    </array>
+    <array name="awards_1">
+        <item>highest_avg_calories_award_name</item>
+        <item>highest_avg_calories_award_description</item>
+        <item>@drawable/ic_orange_circle</item>
+        <item>@drawable/ic_sticker_calories</item>
+        <item>@drawable/ic_calories_trophy</item>
+        <item>@color/award_orange_color</item>
+        <item>@drawable/ic_award_calories</item>
+    </array>
+    <array name="awards_2">
+        <item>most_workouts_week_award_name</item>
+        <item>most_workouts_week_award_description</item>
+        <item>@drawable/ic_blue_circle</item>
+        <item>@drawable/ic_sticker_most_times</item>
+        <item>@drawable/ic_most_times_medal</item>
+        <item>@color/award_light_blue_color</item>
+        <item>@drawable/ic_award_most_times</item>
+    </array>
+    <array name="awards_3">
+        <item>three_workouts_in_week_award_name</item>
+        <item>three_workouts_in_week_award_description</item>
+        <item>@drawable/ic_blue_circle</item>
+        <item>@drawable/ic_sticker_3_times</item>
+        <item>@drawable/ic_3_workouts_medal</item>
+        <item>@color/award_light_blue_color</item>
+        <item>@drawable/ic_award_3_times</item>
+    </array>
+    <array name="awards_4">
+        <item>longest_workout_award_name</item>
+        <item>longest_workout_award_description</item>
+        <item>@drawable/ic_purple_circle</item>
+        <item>@drawable/ic_sticker_time</item>
+        <item>@drawable/ic_time_medal</item>
+        <item>@color/award_purple_color</item>
+        <item>@drawable/ic_award_time</item>
+    </array>
+    <array name="awards_5">
+        <item>longest_distance_award_name</item>
+        <item>longest_distance_award_description</item>
+        <item>@drawable/ic_green_circle</item>
+        <item>@drawable/ic_sticker_distance</item>
+        <item>@drawable/ic_distance_crown</item>
+        <item>@color/award_green_color</item>
+        <item>@drawable/ic_award_distance</item>
+    </array>
+    <array name="awards_6">
+        <item>most_distance_award_name</item>
+        <item>most_distance_award_description</item>
+        <item>@drawable/ic_green_circle</item>
+        <item>@drawable/ic_sticker_distance</item>
+        <item>@drawable/ic_distance_crown</item>
+        <item>@color/award_green_color</item>
+        <item>@drawable/ic_award_distance</item>
+    </array>
+    <array name="awards_7">
+        <item>highest_speed_award_name</item>
+        <item>highest_speed_award_description</item>
+        <item>@drawable/ic_red_circle</item>
+        <item>@drawable/ic_sticker_speed</item>
+        <item>@drawable/ic_speed_rocket</item>
+        <item>@color/award_red_color</item>
+        <item>@drawable/ic_award_speed</item>
+    </array>
+    <array name="awards_8">
+        <item>first_workout_award_name</item>
+        <item>first_workout_award_description</item>
+        <item>@drawable/ic_yellow_circle</item>
+        <item>@drawable/ic_sticker_first_workout</item>
+        <item>@drawable/ic_first_workout_medal</item>
+        <item>@color/award_yellow_color</item>
+        <item>@drawable/ic_award_first_workout</item>
+    </array>
+    <array name="awards_9">
+        <item>best_workout_award_name</item>
+        <item>best_workout_award_description</item>
+        <item>@drawable/ic_yellow_circle</item>
+        <item>@drawable/ic_sticker_best_workout</item>
+        <item>@drawable/ic_best_workout_crown</item>
+        <item>@color/award_yellow_color</item>
+        <item>@drawable/ic_award_best_workout</item>
+    </array>
+    <array name="goals_calories_burned_array">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+        <item>550</item>
+        <item>600</item>
+        <item>650</item>
+        <item>700</item>
+        <item>750</item>
+        <item>800</item>
+        <item>850</item>
+        <item>900</item>
+        <item>950</item>
+        <item>1000</item>
+        <item>1050</item>
+        <item>1100</item>
+        <item>1150</item>
+        <item>1200</item>
+        <item>1250</item>
+        <item>1300</item>
+        <item>1350</item>
+        <item>1400</item>
+        <item>1450</item>
+        <item>1500</item>
+        <item>1550</item>
+        <item>1600</item>
+        <item>1650</item>
+        <item>1700</item>
+        <item>1750</item>
+        <item>1800</item>
+        <item>1850</item>
+        <item>1900</item>
+        <item>1950</item>
+        <item>2000</item>
+        <item>2050</item>
+        <item>2100</item>
+        <item>2150</item>
+        <item>2200</item>
+        <item>2250</item>
+        <item>2300</item>
+        <item>2350</item>
+        <item>2400</item>
+        <item>2450</item>
+        <item>2500</item>
+        <item>2550</item>
+        <item>2600</item>
+        <item>2650</item>
+        <item>2700</item>
+        <item>2750</item>
+        <item>2800</item>
+        <item>2850</item>
+        <item>2900</item>
+        <item>2950</item>
+        <item>3000</item>
+        <item>3050</item>
+        <item>3100</item>
+        <item>3150</item>
+        <item>3200</item>
+        <item>3250</item>
+        <item>3300</item>
+        <item>3350</item>
+        <item>3400</item>
+        <item>3450</item>
+        <item>3500</item>
+        <item>3550</item>
+        <item>3600</item>
+        <item>3650</item>
+        <item>3700</item>
+        <item>3750</item>
+        <item>3800</item>
+        <item>3850</item>
+        <item>3900</item>
+        <item>4000</item>
+        <item>4050</item>
+        <item>4100</item>
+        <item>4150</item>
+        <item>4200</item>
+        <item>4250</item>
+        <item>4300</item>
+        <item>4350</item>
+        <item>4400</item>
+        <item>4450</item>
+        <item>4500</item>
+        <item>4550</item>
+        <item>4600</item>
+        <item>4650</item>
+        <item>4700</item>
+        <item>4750</item>
+        <item>4800</item>
+        <item>4850</item>
+        <item>4900</item>
+        <item>4950</item>
+        <item>5000</item>
+    </array>
+    <array name="goals_workout_number_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+    </array>
+    <array name="goals_workout_time_array">
+        <item>05:00</item>
+        <item>10:00</item>
+        <item>15:00</item>
+        <item>20:00</item>
+        <item>25:00</item>
+        <item>30:00</item>
+        <item>35:00</item>
+        <item>40:00</item>
+        <item>45:00</item>
+        <item>50:00</item>
+        <item>55:00</item>
+        <item>60:00</item>
+        <item>65:00</item>
+        <item>70:00</item>
+        <item>75:00</item>
+        <item>80:00</item>
+        <item>85:00</item>
+        <item>90:00</item>
+    </array>
+    <array name="journal_metrics">
+        <item>DURÉE D&apos;EXERCICE</item>
+        <item>NOMBRE DE CALORIES BRÛLÉES</item>
+        <item>FRÉQUENCE CARDIAQUE MOY.</item>
+        <item>DISTANCE</item>
+        <item>VITESSE MOY.</item>
+    </array>
+    <array name="journal_metrics_international">
+        <item>DURÉE D&apos;ENTRAÎNEMENT</item>
+        <item>NOMBRE DE CALORIES BRÛLÉES</item>
+        <item>FRÉQUENCE CARDIAQUE MOY.</item>
+        <item>DISTANCE</item>
+        <item>PUISSANCE MOY.</item>
+        <item>VITESSE MOY.</item>
+    </array>
+    <array name="journal_tabs_titles">
+        <item>Jour</item>
+        <item>Semaine</item>
+        <item>Année</item>
+    </array>
+    <array name="journal_week_days">
+        <item>DIM.</item>
+        <item>LUN.</item>
+        <item>MAR.</item>
+        <item>MER.</item>
+        <item>JEU.</item>
+        <item>VEN.</item>
+        <item>SAM.</item>
+    </array>
+    <array name="journal_year_months">
+        <item>J</item>
+        <item>F</item>
+        <item>M</item>
+        <item>A</item>
+        <item>M</item>
+        <item>J</item>
+        <item>J</item>
+        <item>A</item>
+        <item>S</item>
+        <item>O</item>
+        <item>N</item>
+        <item>D</item>
+    </array>
+    <array name="navigation_drawer_items_active_icons_array">
+        <item>@drawable/ic_menu_home_active</item>
+        <item>@drawable/ic_menu_goals_active</item>
+        <item>@drawable/ic_menu_awards_active</item>
+        <item>@drawable/ic_menu_journal_active</item>
+    </array>
+    <array name="navigation_drawer_items_icons_array">
+        <item>@drawable/ic_menu_home</item>
+        <item>@drawable/ic_menu_goals</item>
+        <item>@drawable/ic_menu_awards</item>
+        <item>@drawable/ic_menu_journal</item>
+    </array>
+    <array name="navigation_drawer_items_names_array">
+        <item>Accueil</item>
+        <item>Objectifs</item>
+        <item>Prix</item>
+        <item>Journal</item>
+    </array>
+    <array name="program_id_5">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </array>
+    <array name="program_id_7">
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>4</item>
+        <item>35</item>
+        <item>14</item>
+        <item>11</item>
+        <item>36</item>
+        <item>1</item>
+        <item>24</item>
+    </array>
+    <array name="program_name_m5">
+        <item>Objectif calorique</item>
+        <item>Brûlage des calories</item>
+        <item>Brûlage des graisses</item>
+        <item>Marches</item>
+        <item>Max intelligent</item>
+        <item>Exercice continu</item>
+        <item>Test de fitness</item>
+        <item>Manuel</item>
+        <item>Intervalle Max</item>
+    </array>
+    <array name="program_name_m7">
+        <item>Intervalle 7 minutes MAX.</item>
+        <item>Intervalle 14 minutes MAX.</item>
+        <item>Intervalle 21 minutes MAX.</item>
+        <item>Intervalle de puissance</item>
+        <item>Objectif calorique</item>
+        <item>Allure soutenue</item>
+        <item>Brûlage des calories</item>
+        <item>Brûlage des graisses</item>
+        <item>Marches</item>
+        <item>Manuel</item>
+        <item>Test de fitness</item>
+    </array>
+    <array name="units">
+        <item>@string/units_miles</item>
+        <item>@string/units_kilometers</item>
+    </array>
+    <array name="units_array">
+        <item>Miles</item>
+        <item>Kilomètres</item>
+    </array>
+</resources>

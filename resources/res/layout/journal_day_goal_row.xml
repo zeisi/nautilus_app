@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/journal_day_goal_layout_height">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/goal_icon_image_view" android:layout_width="@dimen/journal_day_goal_image_width" android:layout_height="@dimen/journal_day_goal_image_height" android:layout_margin="@dimen/journal_day_goal_image_margin" android:src="@drawable/ic_goal_achieved"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4">
+        <TextView android:textSize="@dimen/journal_day_goal_text_size" android:textColor="@color/journal_day_goal_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/goal_title_text_view" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Distance Goal:" android:layout_weight="3" style="@style/TextLight"/>
+        <TextView android:textSize="@dimen/journal_day_goal_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/goal_value_text_view" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/journal_day_goal_value_margin_left" android:text="00:00:00" android:layout_weight="1" android:layout_centerVertical="true" style="@style/TextBold"/>
+    </LinearLayout>
+</LinearLayout>

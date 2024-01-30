@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bb_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/bb_logo_image_view" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/bb_logo" android:scaleType="fitEnd" android:layout_weight="0.2"/>
+    <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/bb_white" android:gravity="top|center_vertical|center_horizontal|center" android:paddingLeft="60dp" android:paddingRight="60dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/bb_send_feedback_intro" android:layout_weight="0.15"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center" android:id="@+id/bb_shake_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bb_shake_bg" android:alpha="0"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/bb_shake_da_phone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bb_shake_da_phone"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.2">
+        <Button android:textSize="16dp" android:textColor="@color/bb_white" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/bb_dismiss_btn" android:background="@drawable/bb_btn_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="35dp" android:text="@string/bb_dismiss" android:textAllCaps="false"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:windowNoTitle="true" android:background="@drawable/bb_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top" android:id="@+id/bb_feedback_top_bar" android:padding="10dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="15sp" android:textColor="@color/bb_white" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/bb_cancel_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bb_cancel" android:layout_weight="0.09"/>
+        <ImageView android:gravity="center" android:id="@+id/bb_logo_image_view" android:paddingTop="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/bb_logo" android:adjustViewBounds="false" android:layout_weight="0.95"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="30dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <Button android:id="@+id/bb_info_button" android:background="@android:drawable/ic_dialog_info" android:padding="10dp" android:focusable="true" android:focusableInTouchMode="true" android:duplicateParentState="true" android:layout_width="20dp" android:layout_height="wrap_content" android:foregroundGravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/bb_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/bb_feedback_bottom_bar" android:padding="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/bb_send_feedback_instruction"/>
+</FrameLayout>

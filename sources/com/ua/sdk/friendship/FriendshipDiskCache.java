@@ -1,0 +1,4 @@
+package com.ua.sdk.friendship;
+
+public class FriendshipDiskCache {
+}

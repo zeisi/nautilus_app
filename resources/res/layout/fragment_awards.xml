@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container_awards_list" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view_awards" android:padding="@dimen/awards_item_offset" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/award_detail_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/awards_detail_container_margin">
+        <android.support.v7.widget.CardView android:layout_gravity="center" android:id="@+id/card_award_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/awards_detail_card_margin_bottom" app:cardElevation="@dimen/awards_detail_card_elevation" app:cardPreventCornerOverlap="false">
+            <LinearLayout android:orientation="vertical" android:background="@color/award_detail_card_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="right" android:id="@+id/image_view_exit_detail" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/awards_detail_exit_img_view_margin" android:src="@drawable/ic_close_button" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view_award_detail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

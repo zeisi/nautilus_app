@@ -1,0 +1,43 @@
+package com.nautilus.omni.util;
+
+public class BroadcastKeys {
+    public static final String ADD_OMNI_DEVICE = "com.nautilus.omni.ADDOMNIDEVICE";
+    public static final String CONNECT_TO_OMNI_DEVICE = "com.nautilus.omni.CONNECTOMNIDEVICE";
+    public static final String CONSOLE_NOT_RESPONSIVE_ERROR = "com.nautilus.omni.CONSOLE_NOT_RESPONSIVE_ERROR";
+    public static final String DISABLE_SYNC_NOW_BUTTON = "com.nautilus.omni.DISABLESYNCBUTTON";
+    public static final String DISCONNECT_OMNI_TRAINER = "com.nautilus.omni.DISCONNECT";
+    public static final String ENABLE_SYNC_NOW_BUTTON = "com.nautilus.omni.ENABLESYNCBUTTON";
+    public static final String END_PAIRING_PROCESS = "com.nautilus.omni.ENDPAIRING";
+    public static final String GET_BLE_LOCK = "com.nautilus.omni.GETBLE";
+    public static final String GET_OMNI_PRODUCT_DATA = "com.nautilus.omni.GETPRODUCTDATA";
+    public static final String GET_OMNI_STATUS = "com.nautilus.omni.GETSTATUS";
+    public static final String GET_USER_DATA = "com.nautilus.omni.GETUSERDATA";
+    public static final String GET_WORKOUT_DATA = "com.nautilus.omni.GETWORKOUTDATA";
+    public static final String HIDE_CONNECTING_DEVICE_TOAST = "com.nautilus.omni.HIDECONNECTINGTOAST";
+    public static final String NEW_WORKOUTS_LOADED = "com.nautilus.omni.NEWWORKOUTSLOADED";
+    public static final String OMNI_CONNECTION_ERROR = "com.nautilus.omni.CONNECTIONERROR";
+    public static final String OMNI_CONSOLE_BUSY = "com.nautilus.omni.CONSOLEBUSY";
+    public static final String OMNI_SUCCESSFUL_CONNECTION = "com.nautilus.omni.SUCCESSFULCONNECTION";
+    public static final String OMNI_UPDATE = "com.nautilus.omni.OMNIUPDATE";
+    public static final String SEND_OMNI_PRODUCT_DATA = "com.nautilus.omni.SENDOMNIPRODUCTDATA";
+    public static final String SEND_OMNI_STATUS = "com.nautilus.omni.SENDOMNISTATUS";
+    public static final String SEND_USER_DATA = "com.nautilus.omni.SENDUSERDATA";
+    public static final String SEND_WORKOUT_DATA = "com.nautilus.omni.SENDWORKOUTDATA";
+    public static final String SHOW_ERROR_CONNECTING_DIALOG = "com.nautilus.omni.SHOWERRORCONNECTINGDIALOG";
+    public static final String START_OMNI_SCAN = "com.nautilus.omni.STARTOMNISCAN";
+    public static final String START_PAIRING_PROCESS = "com.nautilus.omni.STARTPAIRING";
+    public static final String START_SYNC_PROCESS = "com.nautilus.omni.STARTSYNC";
+    public static final String STOP_OMNI_SCAN = "com.nautilus.omni.STOPOMNISCAN";
+    public static final String STOP_SYNC_SERVICE = "com.nautilus.omni.STOPSYNCSERVICE";
+    public static final String STOP_SYNC_STATE_ON_OTHER_SCREENS = "com.nautilus.omni.STOPSYNCREMAININGSCREENS";
+    public static final String SUCCESSFUL_BLE_LOCK = "com.nautilus.omni.SUCCESSFULBLELOCK";
+    public static final String SUCCESSFUL_CONNECTION_FROM_PAIRING_SCREEN = "com.nautilus.omni.SUCCESSFULCONNECTIONFROMPAIRINGSCREEN";
+    public static final String SUCCESSFUL_END_PAIRING = "com.nautilus.omni.SUCCESSFULENDPAIRING";
+    public static final String SYNC_FAILED = "com.nautilus.omni.SYNCFAILED";
+    public static final String SYNC_FINISHED = "com.nautilus.omni.SYNCFINISHED";
+    public static final String UNABLE_TO_CONNECT = "com.nautilus.omni.UNABLETOCONNECT";
+    public static final String UNEXPECTED_DISCONNECTION = "com.nautilus.omni.UNEXPECTEDDISCONNECT";
+    public static final String UPDATE_MAIN_ACTIVITY_WHEN_FAILED = "com.nautilus.omni.UPDATEWHENFAILED";
+    public static final String UPDATE_MAIN_ACTIVITY_WHEN_FINISHED = "com.nautilus.omni.UPDATEWHENFINISHED";
+    public static final String USER_NUMBER_SELECTED_RECEIVER = "com.nautilus.omni.USERSELECTED";
+}
